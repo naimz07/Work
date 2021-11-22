@@ -60,8 +60,6 @@ public class Board extends Cell{
     public Board() {
     }
 
-    public static void flagCell() {
-    }
 
     /**
      * Prints out the board with formatted colours and numbering around the sides.
