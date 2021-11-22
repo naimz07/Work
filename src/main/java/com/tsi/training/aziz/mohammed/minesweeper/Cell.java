@@ -136,6 +136,8 @@ public abstract class Cell {
         }
     }
 
+
+
     /**
      * Uses the toString() method and then applies colours using
      * ANSI codes depending on the current state of the object.
