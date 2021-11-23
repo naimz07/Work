@@ -12,8 +12,10 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class BoardTest {
 
+    
+
     @Test
-    public void printBoard() {
+    public void testPrintBoard() {
         Board testBoard = new Board(10, 10);
         Board.cell[][] exampleBoard = new Board.cell[10][10];
         boolean boardMatch = true;
