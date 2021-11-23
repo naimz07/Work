@@ -13,6 +13,16 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 public class BoardTest {
 
     @Test
+    public void printBoard(){
+        Board testBoard = new Board(10,10);
+
+    }
+
+
+
+
+
+    @Test
     public void testValidPosition() {
         Board testBoard = new Board(10,10);
         Position position = new Position(9, 9);
@@ -56,6 +66,15 @@ public class BoardTest {
     }
 
     @Test
+    public void testRevealAll() {
+        Board testBoard = new Board(10, 10);
+        testBoard.revealAll();
+        boolean revealAll = testBoard.revealAll();
+        assertEquals(true , revealAll,"reveal all");
+        System.out.println("RevealAll test complete, test Passed");
+    }
+
+    @Test
     public void testIsCellBomb(){
         Board testBoard = new Board(10, 10);
         Position position = new Position(5, 5);
@@ -89,6 +108,7 @@ public class BoardTest {
         Position position = new Position(5, 5);
         boolean isCellBomb = testBoard.isCellBomb(position);
         assertEquals(false, isCellBomb, "false");
+
 
     }
 

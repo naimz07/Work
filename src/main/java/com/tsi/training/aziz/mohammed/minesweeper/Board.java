@@ -103,12 +103,13 @@ public class Board extends Cell{
         }
     }
 
-    public void revealAll() {
+    public boolean revealAll() {
         for(int y = 0; y < height; y++) {
             for(int x = 0; x < width; x++) {
                 cells[x][y].reveal();
             }
         }
+        return true;
     }
 
     public boolean isWon() {
