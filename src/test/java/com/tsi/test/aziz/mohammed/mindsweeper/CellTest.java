@@ -10,27 +10,27 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CellTest{
 
-//    @Test
-//    public void testGetIsRevealed() {
-//        Cell testCell = new Cell();
-//        boolean revealed = testCell.getIsRevealed();
-//        assertEquals(false, revealed);
-//        System.out.println(revealed);
-//    }
-//
-//    @Test
-//    public void testGetIsBomb() {
-//        Cell testCell = new Cell();
-//        boolean isBomb = testCell.getIsRevealed();
-//        assertEquals(false, isBomb);
-//    }
-//
-//    @Test
-//    public void testGetIsFlagged() {
-//        Cell testCell = new Cell();
-//        boolean isFlagged = testCell.getIsFlagged();
-//        assertEquals(false, isFlagged);
-//    }
+    @Test
+    public void testGetIsRevealed() {
+        Cell testCell = new Cell();
+        boolean revealed = testCell.getIsRevealed();
+        assertEquals(false, revealed);
+        System.out.println(revealed);
+    }
+
+    @Test
+    public void testGetIsBomb() {
+        Cell testCell = new Cell();
+        boolean isBomb = testCell.getIsRevealed();
+        assertEquals(false, isBomb);
+    }
+
+    @Test
+    public void testGetIsFlagged() {
+        Cell testCell = new Cell();
+        boolean isFlagged = testCell.getIsFlagged();
+        assertEquals(false, isFlagged);
+    }
 
 
 
