@@ -79,16 +79,25 @@ public class BoardTest {
         Board testBoard = new Board(10, 10);
         Position position = new Position(5, 5);
         testBoard.flagCell(position);
-        assertEquals(position.isFlagged, testBoard.isFlagged, "is flagged");
+        assertEquals(position.getIsFlagged(), testBoard.getIsFlagged(), "is flagged");
         System.out.println("flagCell test complete, test Passed");
     }
 
+    @Test
+    public void testAddBomb(){
+        Board testBoard = new Board(10, 10);
+        Position position = new Position(5, 5);
+        boolean isCellBomb = testBoard.isCellBomb(position);
+        assertEquals(false, isCellBomb, "false");
+
+    }
+}
 
 
-//    public void flagCell(Position position) {
-//        cells[position.x][position.y].toggleIsFlagged();
-//    }
-//
+
+
+
+
 
 
 
@@ -122,7 +131,7 @@ public class BoardTest {
 //        testBoard.spawnBombs(10);
 //        assertEquals(10, 10,"testSpawnBomb has passed");
 //    }
-}
+
 
 
 

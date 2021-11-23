@@ -1,10 +1,10 @@
 package com.tsi.training.aziz.mohammed.minesweeper;
 
-public abstract class Cell {
-    public boolean isRevealed;
-    public boolean isBomb;
-    public int neighbours;
-    public boolean isFlagged;
+public class Cell {
+    private boolean isRevealed;
+    private boolean isBomb;
+    private int neighbours;
+    private boolean isFlagged;
 
     public Cell() {
         resetCell();
