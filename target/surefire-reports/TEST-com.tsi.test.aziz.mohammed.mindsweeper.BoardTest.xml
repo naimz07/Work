@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest" time="0.03" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest" time="0.027" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.1+12-LTS-39"/>
@@ -60,8 +60,10 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest" name="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest.testValidPosition" time="0.028"/>
-  <testcase classname="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest" name="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest.testRevealcell" time="0"/>
-  <testcase classname="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest" name="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest.testIsCellRevealed" time="0.002"/>
+  <testcase classname="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest" name="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest.testValidPosition" time="0.026"/>
+  <testcase classname="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest" name="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest.testRevealCell" time="0"/>
+  <testcase classname="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest" name="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest.testIsCellRevealed" time="0.001"/>
   <testcase classname="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest" name="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest.testIsCellBomb" time="0"/>
+  <testcase classname="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest" name="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest.testIsCellFlagged" time="0"/>
+  <testcase classname="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest" name="com.tsi.test.aziz.mohammed.mindsweeper.BoardTest.testFlagCell" time="0"/>
 </testsuite>
