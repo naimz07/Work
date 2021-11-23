@@ -91,6 +91,23 @@ public class BoardTest {
         assertEquals(false, isCellBomb, "false");
 
     }
+
+    @Test
+    public void testIsWon() {
+        Board testBoard = new Board(10, 10);
+        boolean isWon = testBoard.isWon();
+        assertEquals(false, isWon, "true");
+
+    }
+
+
+
+
+
+
+//    public boolean isWon() {
+//        return revealedTotal + bombCount == width * height;
+//    }
 }
 
 
