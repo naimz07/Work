@@ -13,11 +13,28 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 public class BoardTest {
 
     @Test
-    public void printBoard(){
-        Board testBoard = new Board(10,10);
-
+    public void printBoard() {
+        Board testBoard = new Board(10, 10);
+        Board.cell[][] exampleBoard = new Board.cell[10][10];
+        boolean boardMatch = true;
+        int height = 0;
+        int width = 0;
+        Object[][] cells;
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                exampleBoard[x][y] = new Board.cell();
+                if (exampleBoard[x][y].getClass() != testBoard.cells[x][y].getClass()) {
+                    boardMatch = false;
+                }
+            }
+        }
+        // Testing if the classes of all elements match
+        assertEquals(true, boardMatch, "The elements are not the same class");
+        // Testing the amount of rows
+        assertEquals(testBoard.cells.length, exampleBoard.length, "The arrays have a different number of rows");
+        // Testing the amount of columns
+        assertEquals(testBoard.cells[0].length, exampleBoard[0].length, "The arrays have a different number of columns");
     }
-
 
 
 

@@ -174,6 +174,6 @@ public class Board extends Cell{
         return changedPoints;
     }
 
-    private static class cell extends Cell {
+    public static class cell extends Cell {
     }
 }
