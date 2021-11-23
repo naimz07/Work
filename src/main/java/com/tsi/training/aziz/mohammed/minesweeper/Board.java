@@ -3,7 +3,7 @@ package com.tsi.training.aziz.mohammed.minesweeper;
 import java.util.*;
 
 public class Board extends Cell{
-    public Cell[][] cells;
+    public static Cell[][] cells;
     public int width, height;
     public int bombCount;
     public int revealedTotal;
@@ -112,7 +112,7 @@ public class Board extends Cell{
         return true;
     }
 
-    public boolean isWon() {
+    public boolean hasWon() {
         return revealedTotal + bombCount == width * height;
     }
 

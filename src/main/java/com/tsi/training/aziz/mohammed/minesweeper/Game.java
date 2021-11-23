@@ -27,10 +27,10 @@ public class Game {
             } else {
                 board.revealCell(inputPosition);
             }
-        } while(!board.isWon() && (isFlagging || !board.isCellBomb(inputPosition)));
+        } while(!board.hasWon() && (isFlagging || !board.isCellBomb(inputPosition)));
         board.revealAll();
         board.printBoard();
-        if(board.isWon()) {
+        if(board.hasWon()) {
             System.out.println("Victory! You revealed all the non-bombs!");
         } else {
             System.out.println("Boom! You hit a bomb! :(");

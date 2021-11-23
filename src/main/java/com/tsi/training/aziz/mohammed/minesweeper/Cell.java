@@ -64,14 +64,13 @@ public class Cell {
     }
 
 
-
-    //    private static final String ANSI_RESET = "\u001B[0m";
+//    private static final String ANSI_RESET = "\u001B[0m";
 //    private static final String ANSI_RED = "\u001B[31m";
 //    private static final String ANSI_GREEN = "\u001B[32m";
 //    private static final String ANSI_YELLOW = "\u001B[33m";
 //    private static final String ANSI_BLUE = "\u001B[34m";
 //    private static final String ANSI_PURPLE = "\u001B[35m";
-
+//
 //    private String colourString(String str, String colourFlag) {
 //        return colourFlag + str + ANSI_RESET;
 //    }
@@ -92,5 +91,5 @@ public class Cell {
 //            return colourString(str, ANSI_BLUE);
 //        }
 //    }
-//}
 }
+
